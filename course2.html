@@ -10,9 +10,28 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
         }
         h1 {
             text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0056b3;
         }
         ul {
             list-style-type: none;
@@ -20,56 +39,85 @@
         }
         li {
             margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
             display: flex;
             align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .place-img {
             width: 275px;
             height: 200px;
             margin-right: 20px;
-            border-radius: 60%;
+            border-radius: 10px;
+            object-fit: cover; /* Ensures images maintain aspect ratio */
+        }
+        strong a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        strong a:hover {
+            color: #0056b3;
+        }
+        .more-attractions {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .more-attractions a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .more-attractions a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
-<a href="webiste-home.html">Home</a> 
-<a href="course-selector.html">Guides</a>   
+    <nav>
+        <a href="webiste-home.html">Home</a> 
+        <a href="course-selector.html">Guides</a>   
+    </nav>
+
     <h1>Best Places to Visit in Oakland</h1>
     <ul>
         <li>
             <img src="https://assets1.cbsnewsstatic.com/i/cbslocal/wp-content/uploads/sites/15909776/2014/08/red-wood-tree-man-v625x352.jpg" alt="Redwood Regional Park" class="place-img">
             <div>
-                <strong><a href="https://www.ebparks.org/parks/redwood/">Redwood Regional Park</a></strong> - Redwood Regional Park is a sanctuary of coast redwoods, the tallest living things in the world. Located just a few miles over the ridge from downtown Oakland, the park’s 1,830 acres are the largest remaining natural stand of coast redwoods in the East Bay. Enjoy miles of hiking and horseback riding trails.
+                <strong><a href="https://www.ebparks.org/parks/redwood/">Redwood Regional Park</a></strong> - A sanctuary of coast redwoods, the tallest living things in the world, with hiking and horseback riding trails.
             </div>
         </li>
         <li>
             <img src="https://garden-gc.s3.amazonaws.com/2019/12/18/12/51/28/4514cb26-6bfe-4271-b758-f6131401f2b2/01_5.jpg" alt="Oakland Museum of California" class="place-img">
             <div>
-                <strong><a href="https://museumca.org/">Oakland Museum of California</a></strong> - The Oakland Museum of California (OMCA) is one of the top-rated Bay Area museums to explore California art, history, and natural sciences. OMCA’s collections comprise more than 1.9 million objects, including seminal art works and historical artifacts.
+                <strong><a href="https://museumca.org/">Oakland Museum of California</a></strong> - Explore California art, history, and natural sciences at one of the Bay Area's top-rated museums.
             </div>
         </li>
         <li>
             <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/476000/476603-Childrens-Fairyland.jpg" alt="Children's Fairyland" class="place-img">
             <div>
-                <strong><a href="https://fairyland.org/">Children's Fairyland</a></strong> - Since 1950, Fairyland has been the low-tech, high-touch outdoor playground for young children and their parents or caregivers. It’s a magical fantasy world where young children can create, imagine, play, and learn. 
+                <strong><a href="https://fairyland.org/">Children's Fairyland</a></strong> - A magical outdoor playground for young children, where they can create, imagine, play, and learn.
             </div>
         </li>
         <li>
             <img src="https://d12xor56xjll8j.cloudfront.net/wp-content/uploads/2020/06/06141949/Summer-2888.jpg" alt="Joaquin Miller Park" class="place-img">
             <div>
-                <strong><a href="https://www.ebparks.org/parks/joaquin_miller/">Joaquin Miller Park</a></strong> - Joaquin Miller Park has 500 acres of diverse terrain and miles of hiking trails. Take in amazing views of the bay, San Francisco, and the surrounding hills from this lovely urban park. 
+                <strong><a href="https://www.ebparks.org/parks/joaquin_miller/">Joaquin Miller Park</a></strong> - Enjoy diverse terrain and stunning views of the bay and San Francisco from this lovely urban park.
             </div>
         </li>
         <li>
             <img src="https://assets.goaaa.com/image/upload/if_ar_gte_1.0/c_limit,w_934,h_620,q_auto:best/if_else/c_limit,w_500,h_750,q_auto:best/if_end/v1651866620/Via/Rainer-gibbon-via-magazine-aaa-mj22-courtesy-oakland-zoo-Steve-Goodall.jpg" alt="Oakland Zoo" class="place-img">
             <div>
-                <strong><a href="https://www.oaklandzoo.org/">Oakland Zoo</a></strong> - Oakland Zoo is home to more than 850 native and exotic animals. Explore the African Savanna, a tropical rainforest, and California Trail. Enjoy a variety of exciting wildlife experiences.
+                <strong><a href="https://www.oaklandzoo.org/">Oakland Zoo</a></strong> - Home to over 850 animals, offering wildlife experiences across the African Savanna and California Trail.
             </div>
         </li>
     </ul>
-    <a href="https://www.visitoakland.com/things-to-do/attractions/">Discover more attractions in Oakland</a>
+    
+    <div class="more-attractions">
+        <p><a href="https://www.visitoakland.com/things-to-do/attractions/">Discover more attractions in Oakland</a></p>
+    </div>
 </body>
 </html>

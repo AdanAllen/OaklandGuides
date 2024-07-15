@@ -10,9 +10,28 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff;
+            color: #333;
         }
         h1 {
             text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0056b3;
         }
         ul {
             list-style-type: none;
@@ -20,58 +39,85 @@
         }
         li {
             margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
             display: flex;
             align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .restaurant-img {
             width: 275px;
             height: 200px;
             margin-right: 20px;
-            border-radius: 60%;
+            border-radius: 10px;
+            object-fit: cover; /* Ensures images maintain aspect ratio */
+        }
+        strong a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        strong a:hover {
+            color: #007bff;
+        }
+        .more-restaurants {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .more-restaurants a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .more-restaurants a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
-<a href="webiste-home.html">Home</a> 
-<a href="course-selector.html">Guides</a>   
-    
+    <nav>
+        <a href="website-home.html">Home</a> 
+        <a href="course-selector.html">Guides</a>   
+    </nav>
     
     <h1>Best Restaurants in Oakland</h1>
     <ul>
         <li>
             <img src="https://www.latitude38.com/wp-content/uploads/2020/06/43684216_1106847416159473_1129224310313975808_o-1.jpg" alt="Brotzeit Lokal" class="restaurant-img">
             <div>
-                <strong><a href="https://brotzeitbiergarten.com/">Brotzeit Lokal</a></strong> - Brotzeit Lokal is a beloved Oakland destination that transports diners straight to Germany with its authentic Bavarian cuisine and lively beer garden atmosphere. Situated along the scenic Oakland Estuary, Brotzeit Lokal is renowned for its hearty dishes such as pretzels, sausages, and schnitzel, perfectly complemented by an impressive selection of German beers on tap. Whether you're looking to enjoy a casual outdoor meal or experience traditional German hospitality indoors, Brotzeit Lokal offers a taste of Bavaria in the heart of the Bay Area.
+                <strong><a href="https://brotzeitbiergarten.com/">Brotzeit Lokal</a></strong> - Experience authentic Bavarian cuisine with hearty dishes like pretzels, sausages, and schnitzel, paired with a wide selection of German beers.
             </div>
         </li>
         <li>
             <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_80,w_1200/v1/crm/oakland/_DSC8948_B54E7E14-65D2-4157-A549260E2FA60C94_55292fde-06d1-4416-9b3d7e35db5ddf71.jpg" alt="Homeroom" class="restaurant-img">
             <div>
-                <strong><a href="https://homeroom510.com/">Homeroom</a></strong> - Homeroom has earned its reputation as Oakland's go-to spot for comfort food enthusiasts, particularly renowned for its creative twists on classic mac 'n' cheese. Located in Temescal, this cozy eatery elevates the humble pasta dish with gourmet ingredients and inventive flavor combinations. From truffle mac to buffalo chicken mac, Homeroom's menu delights both kids and adults alike, making it a cherished neighborhood gem for those seeking a comforting and indulgent dining experience.
+                <strong><a href="https://homeroom510.com/">Homeroom</a></strong> - Specializing in creative mac 'n' cheese, this cozy eatery is perfect for comfort food lovers of all ages.
             </div>
         </li>
         <li>
             <img src="https://d3d7qmccklvqbw.cloudfront.net/wp-content/uploads/2018/08/37402452_906601246208309_5177736813682360320_n.jpg" alt="Pizzaiolo" class="restaurant-img">
             <div>
-                <strong><a href="https://pizzaiolooakland.com/">Pizzaiolo</a></strong> - Pizzaiolo in Oakland stands out as a cornerstone of the city's dining scene, celebrated for its artisanal approach to wood-fired pizzas and rustic Italian cuisine. Located in the vibrant Temescal neighborhood, Pizzaiolo embodies a commitment to quality ingredients and traditional methods, evident in every bite of their expertly crafted pizzas with perfectly charred crusts and flavorful toppings. Beyond pizzas, the restaurant offers a seasonal menu that highlights local produce and sustainable practices, ensuring a fresh and delightful dining experience. The cozy yet lively ambiance, coupled with friendly service, makes Pizzaiolo a beloved destination for both casual meals and special occasions alike in Oakland.
+                <strong><a href="https://pizzaiolooakland.com/">Pizzaiolo</a></strong> - Known for its wood-fired pizzas and seasonal menu, this restaurant offers a delightful dining experience in a vibrant atmosphere.
             </div>
         </li>
         <li>
             <img src="https://archive.is/rRf3c/6c96a27fa40325289ebf985b8293412c4a57fe86.webp" alt="Commis" class="restaurant-img">
             <div>
-                <strong><a href="https://www.commisrestaurant.com/">Commis</a></strong> - Commis stands as a beacon of fine dining excellence in Oakland, holding the prestigious distinction of a Michelin-starred restaurant. Tucked away in the bustling Piedmont Avenue neighborhood, Commis offers a refined and intimate dining experience centered around its innovative tasting menus. Led by Chef James Syhabout, the kitchen crafts meticulously plated dishes that highlight seasonal ingredients and inventive culinary techniques, creating an unforgettable gastronomic journey for patrons seeking the pinnacle of culinary artistry in the Bay Area.
+                <strong><a href="https://www.commisrestaurant.com/">Commis</a></strong> - A Michelin-starred gem offering innovative tasting menus in an intimate setting, perfect for a fine dining experience.
             </div>
         </li>
         <li>
             <img src="https://media.cntraveler.com/photos/5a69ebb70093c40b0186a0ad/16:9/w_2240,c_limit/Hawker-Fare__2018_HawkerFare-Dining-Scene-Photo-Credit-Aubrie-Pick-34.jpg" alt="Hawker Fare" class="restaurant-img">
             <div>
-                <strong><a href="https://www.hawkerfare.com/">Hawker Fare</a></strong> - Hawker Fare brings the vibrant flavors of Southeast Asia to Oakland's culinary scene with its bold and authentic street food. Located in the eclectic Temescal neighborhood, Hawker Fare captivates diners with dishes inspired by Thai and Laotian cuisines, showcasing a rich tapestry of flavors and spices. From aromatic curries to fiery noodles and savory grilled meats, every dish at Hawker Fare tells a story of tradition and innovation. The casual and inviting atmosphere encourages communal dining, making it a favorite spot for food enthusiasts looking to explore the diverse and dynamic flavors of Southeast Asia without leaving the Bay Area.
+                <strong><a href="https://www.hawkerfare.com/">Hawker Fare</a></strong> - Enjoy vibrant Southeast Asian street food, featuring bold flavors and communal dining in a lively atmosphere.
             </div>
         </li>
     </ul>
-    <a href="https://www.visitoakland.com/restaurants/?svap=9433&svat=cl&gad_source=1&gbraid=0AAAAADcL6eQImur11_TeeqNOjWImHc3oY&gclid=CjwKCAjwnK60BhA9EiwAmpHZw-ZeRZ5h9Z18g5sjNpDPaSU6pw8WkQCGfMdeQ0AqYoN-xvFZ9qMVuxoCC1oQAvD_BwE">See more Oakland restaurants</a>
+    
+    <div class="more-restaurants">
+        <p><a href="https://www.visitoakland.com/restaurants/?svap=9433&svat=cl&gad_source=1&gbraid=0AAAAADcL6eQImur11_TeeqNOjWImHc3oY&gclid=CjwKCAjwnK60BhA9EiwAmpHZw-ZeRZ5h9Z18g5sjNpDPaSU6pw8WkQCGfMdeQ0AqYoN-xvFZ9qMVuxoCC1oQAvD_BwE">See more Oakland restaurants</a></p>
+    </div>
 </body>
 </html>

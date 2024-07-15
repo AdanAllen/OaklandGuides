@@ -4,87 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adan's Website</title>
-
     <link rel="stylesheet" href="website-home.css">
-
-
-
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333333;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #444444;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h2, h3 {
+            margin: 20px 0;
+            font-weight: 300;
+        }
+        h2 {
+            font-size: 2em;
+            color: #ffcc00;
+        }
+        .section {
+            margin: 40px 0;
+            border: 1px solid #444444;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #2a2a2a;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
-<style>
-body {
-    background-color: black;
-    color: white;
-
-}
-h1{
-    text-align: center;
-}
-a{
-    color:white;
-}
-.bigger-image{
-    height: 10000;
-    width: 100;
-}
-.h2{
-    text-align: center;
-    margin-top: 200px;
-}
-.h5{
-    margin-left: 300px;
-    margin-right: 300px;
-}
-.h4{
-    margin-right: 300px;
-}
-
-.h3{
-    text-align: center;
-}
-.h10{
-    margin-left: 690px;
-    margin-right: 300px;
-}
-
-.h19{
-    padding-left: 200px;
-}
-.bold{
-    font-weight: bolder;
-}
-.lower{
-    padding-top: 100px;
-}
-
-</style>
-
-
-
 <body>
-    <a href="webiste-home.html">Home</a> 
-    <a href="course-selector.html">Guides</a>  
-    <h1>
-    OaklandGuides
-</h1>
-<img src="https://dummyimage.com/1500x400/4d3654/ffffff&text=A+Guide+to+Oakland+for+Tourists+and+Residents+Alike" alt="">
-<img src="https://images.unsplash.com/photo-1576848444197-a582052713b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-<a class="h3" href="course-selector.html">Find the best best ways to experince oakland if your a tourist and even if your a Resident</a>
-<h2 class="h2">About us</h2>
+    <header>
+        <h1>OaklandGuides</h1>
+        <nav>
+            <a href="website-home.html">Home</a>
+            <a href="course-selector.html">Guides</a>
+        </nav>
+    </header>
 
-<h3 class="h5">
- Welcome to OaklandGuides, your go-to resource for exploring and experiencing the vibrant city of Oakland like a local. Whether you're a visitor looking to uncover hidden gems or a resident seeking new adventures, OaklandGuides is here to help you navigate the diverse and dynamic neighborhoods of our city.</h3>
-<h3 class="h19 bold lower">Our Mission</h3>    
-<h3 class="h4 h19">Our mission is to showcase the rich tapestry of Oakland's communities and cultures while promoting responsible tourism and local engagement. We believe in celebrating diversity, supporting small businesses, and fostering a deeper connection between residents and visitors alike.</h3>
-<h3 class="h19 bold">What We Offer</h3>
-<h3 class="h4 h19">At OaklandGuides, we curate a collection of comprehensive guides, insider tips, and local recommendations to make your Oakland experience unforgettable. From the bustling streets of Downtown to the serene landscapes of Lake Merritt, our guides cover everything from dining and entertainment to outdoor activities and cultural landmarks.</h3>
-<h3 class="h19 bold">Join Us</h3>
-<h3 class="h4 h19"></h3>
-<a class="h2 h19" href="course-selector.html">At OaklandGuides you can learn anything for Free!(click here to see your options)</a>
+    <img src="https://dummyimage.com/1500x400/4d3654/ffffff&text=A+Guide+to+Oakland+for+Tourists+and+Residents+Alike" alt="Oakland Guide">
+    <img src="https://images.unsplash.com/photo-1576848444197-a582052713b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oakland Image">
 
+    <div class="content">
+        <h2>About Us</h2>
+        <div class="section">
+            <h3>Welcome to OaklandGuides!</h3>
+            <p>Your go-to resource for exploring and experiencing the vibrant city of Oakland like a local. Whether you're a visitor looking to uncover hidden gems or a resident seeking new adventures, we’re here to help you navigate Oakland's diverse neighborhoods.</p>
+        </div>
 
-<h2 class="h2">Contact Us</h2>
-<h4 class="h3">Gmail: adan.allen@hgs.hiddengeniusproject.org</h4>
-<a class="h10" href="https://www.instagram.com/mynameisnotadan/?next=%2F">Instagram</a>
+        <div class="section">
+            <h3>Our Mission</h3>
+            <p>To showcase the rich tapestry of Oakland's communities while promoting responsible tourism and local engagement. We celebrate diversity and support small businesses to connect residents and visitors alike.</p>
+        </div>
+
+        <div class="section">
+            <h3>What We Offer</h3>
+            <p>We curate comprehensive guides, insider tips, and local recommendations for an unforgettable Oakland experience, covering everything from dining to cultural landmarks.</p>
+        </div>
+
+        <div class="section">
+            <h3>Join Us</h3>
+            <p><a href="course-selector.html" style="color: #4c5aed;" >At OaklandGuides, learn anything for free! (Click here to see your options)</a></p>
+        </div>
+
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:adan.allen@hgs.hiddengeniusproject.org" style="color: #ffcc00;">adan.allen@hgs.hiddengeniusproject.org</a></p>
+        <footer>
+            <a href="https://www.instagram.com/mynameisnotadan/?next=%2F">Follow us on Instagram</a>
+        </footer>
+    </div>
 </body>
 </html>
